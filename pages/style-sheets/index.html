@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Living Book — Style Sheets inspired website style systems reference.">
+  <title>Style Sheets — Website Style Awards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#top">THE LIVING BOOK</a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="#systems">CONTENTS</a>
+      <a href="#about">ABOUT</a>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle contrast mode" title="Toggle contrast">◐</button>
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </nav>
+  </header>
+
+  <div class="utility-row">
+    <span>Home</span><b>›</b><span>Style Sheets</span>
+    <span class="utility-right">DESIGN&nbsp;&nbsp; · &nbsp;&nbsp;INTERFACES&nbsp;&nbsp; · &nbsp;&nbsp;IDEAS&nbsp;&nbsp; · &nbsp;&nbsp;SYSTEMS</span>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="micro">STYLE SHEETS</div>
+        <h1>STYLE<br>SHEETS</h1>
+        <p class="dek">A VISUAL STUDY OF INTERFACES,<br>GEOMETRY, MOTION AND INFORMATION.</p>
+        <a class="explore-line" href="#systems"><span>01</span><i></i><strong>EXPLORE DESIGN SYSTEMS</strong><i></i></a>
+      </div>
+
+      <div class="hero-diagram" aria-label="Design system diagram">
+        <svg viewBox="0 0 620 330" role="img">
+          <g class="guide">
+            <circle cx="310" cy="155" r="115"></circle>
+            <circle cx="310" cy="155" r="62"></circle>
+            <line x1="100" y1="155" x2="520" y2="155"></line>
+            <line x1="310" y1="35" x2="310" y2="290"></line>
+          </g>
+          <polygon class="triangle" points="310,52 232,215 390,215"></polygon>
+          <circle cx="310" cy="155" r="3.5" class="dot"></circle>
+          <circle cx="310" cy="52" r="6" class="node"></circle>
+          <circle cx="232" cy="215" r="5" class="node"></circle>
+          <circle cx="390" cy="215" r="5" class="node"></circle>
+          <text x="310" y="70" text-anchor="middle">TYPOGRAPHY</text>
+        </svg>
+        <span class="diagram-label l">□<small>LAYOUT</small></span>
+        <span class="diagram-label r">△<small>MOTION</small></span>
+        <span class="diagram-label bl">○<small>COLOUR</small></span>
+        <span class="diagram-label br">○<small>COMPONENTS</small></span>
+        <button class="diagram-orbit" aria-label="Explore diagram">⊙</button>
+      </div>
+
+      <aside class="quote-card">
+        <span>/ 01</span>
+        <h2>“Design<br>is a language<br>of ideas.”</h2>
+        <hr>
+        <p>EXPLORE<br>THE BUILDING<br>BLOCKS OF<br>THE LIVING BOOK.</p>
+        <a href="#featured">SCROLL ↓</a>
+      </aside>
+    </section>
+
+    <section id="systems" class="systems">
+      <div class="section-head"><span>STYLE SYSTEMS</span><small>/ SELECT A CATEGORY</small></div>
+      <div class="system-grid">
+        <button class="system-card active" data-slide="0">
+          <span class="num">01</span><h3>TYPOGRAPHY</h3><p>Fonts, scales, hierarchy<br>and reading experience.</p><b>→</b><em>Aa</em>
+        </button>
+        <button class="system-card" data-slide="1">
+          <span class="num">02</span><h3>COLOR</h3><p>Palettes, contrast,<br>themes and mood.</p><b>→</b><div class="palette"><i></i><i></i><i></i></div>
+        </button>
+        <button class="system-card" data-slide="2">
+          <span class="num">03</span><h3>LAYOUT</h3><p>Grids, spacing,<br>structure and flow.</p><b>→</b><div class="grid-icon">▦<br>▦</div>
+        </button>
+        <button class="system-card" data-slide="3">
+          <span class="num">04</span><h3>COMPONENTS</h3><p>Buttons, cards, navbars<br>and reusable elements.</p><b>→</b><div class="component-icon"><i></i><i></i><i></i></div>
+        </button>
+        <button class="system-card" data-slide="4">
+          <span class="num">05</span><h3>MOTION</h3><p>Transitions, scroll,<br>parallax and interaction.</p><b>→</b><div class="motion-icon"><i></i><i></i></div>
+        </button>
+      </div>
+    </section>
+
+    <section id="featured" class="feature-layout">
+      <aside class="principles">
+        <div class="micro">DESIGN PRINCIPLES</div>
+        <ol>
+          <li><b>01</b><span>Clarity</span></li>
+          <li><b>02</b><span>Consistency</span></li>
+          <li><b>03</b><span>Hierarchy</span></li>
+          <li><b>04</b><span>Minimalism</span></li>
+          <li><b>05</b><span>Intentional Motion</span></li>
+          <li><b>06</b><span>Accessibility</span></li>
+          <li><b>07</b><span>Beauty in Structure</span></li>
+        </ol>
+        <p>A BETTER WEB<br>THROUGH BETTER DESIGN.</p>
+        <div class="quick">
+          <div class="micro">QUICK RESOURCES</div>
+          <a href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash <span>→</span></a>
+          <a href="https://coolors.co" target="_blank" rel="noreferrer">Color Palettes <span>→</span></a>
+          <a href="https://fonts.google.com" target="_blank" rel="noreferrer">Font Pairings <span>→</span></a>
+          <a href="https://www.flaticon.com" target="_blank" rel="noreferrer">Icon Libraries <span>→</span></a>
+          <a href="https://motion.dev" target="_blank" rel="noreferrer">Animation References <span>→</span></a>
+        </div>
+      </aside>
+
+      <div class="feature-panel" id="featurePanel">
+        <div class="feature-content">
+          <span class="micro">FEATURED</span>
+          <h2 id="featureTitle">From Ideas<br>to Interfaces</h2>
+          <p id="featureText">How design systems turn<br>abstract ideas into meaningful<br>experiences.</p>
+          <a href="#references">READ MORE ↗</a>
+        </div>
+        <div class="feature-number"><button id="prev">‹</button><b id="slideNum">01</b><span>/</span><b>05</b><button id="next">›</button></div>
+        <div class="target-art"><span>PATTERNS<br>EVERYWHERE</span><svg viewBox="0 0 230 190"><rect x="5" y="5" width="220" height="180"/><circle cx="115" cy="95" r="55"/><circle cx="115" cy="95" r="28"/><line x1="115" y1="5" x2="115" y2="185"/><line x1="5" y1="95" x2="225" y2="95"/></svg></div>
+      </div>
+
+      <aside class="wisdom">“Good design<br>is a deeper form<br>of intelligence.”<small>Not just how it looks,<br>but how it helps you think.</small></aside>
+    </section>
+
+    <section id="references" class="references">
+      <div class="ref-head"><span>TOOLS & REFERENCES</span><small>/ CURATED</small></div>
+      <div class="ref-columns">
+        <div>
+          <a href="https://www.awwwards.com" target="_blank" rel="noreferrer"><b class="ref-icon">W</b><span><strong>Awwwards</strong><small>Award winning websites.</small></span><i>↗</i></a>
+          <a href="https://www.cssdesignawards.com" target="_blank" rel="noreferrer"><b class="ref-icon">C</b><span><strong>CSS Design Awards</strong><small>UI, UX and innovation.</small></span><i>↗</i></a>
+          <a href="https://thefwa.com" target="_blank" rel="noreferrer"><b class="ref-icon">F</b><span><strong>The FWA</strong><small>Creative and experimental.</small></span><i>↗</i></a>
+          <a href="https://www.siteinspire.com" target="_blank" rel="noreferrer"><b class="ref-icon">↗</b><span><strong>SiteInspire</strong><small>Clean and professional.</small></span><i>↗</i></a>
+        </div>
+        <div>
+          <a href="https://godly.website" target="_blank" rel="noreferrer"><b class="ref-icon">GF</b><span><strong>Godly</strong><small>Modern landing pages.</small></span><i>↗</i></a>
+          <a href="https://land-book.com" target="_blank" rel="noreferrer"><b class="ref-icon">LB</b><span><strong>Land-book</strong><small>Landing page inspiration.</small></span><i>↗</i></a>
+          <a href="https://onepagelove.com" target="_blank" rel="noreferrer"><b class="ref-icon">O</b><span><strong>One Page Love</strong><small>One page websites.</small></span><i>↗</i></a>
+          <a href="https://dribbble.com" target="_blank" rel="noreferrer"><b class="ref-icon">Dr</b><span><strong>Dribbble</strong><small>Designer community.</small></span><i>↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="about">
+    <span>THE LIVING BOOK / STYLE SHEETS</span>
+    <span>BUILT AS AN INTERACTIVE DESIGN REFERENCE</span>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <button id="closeSearch" aria-label="Close search">×</button>
+    <input id="searchInput" placeholder="Search design systems..." autofocus>
+    <p>Try: typography, color, layout, motion, components</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
