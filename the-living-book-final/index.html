@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Living Book — a growing collection of independent ideas and long-form explorations.">
+  <title>The Living Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">THE LIVING BOOK</a>
+    <nav>
+      <button id="contentsBtn" class="nav-btn">CONTENTS</button>
+      <a class="nav-btn" href="about.html">ABOUT</a>
+    </nav>
+  </header>
+
+  <main class="home home-minimal">
+    <section class="hero">
+      <p class="eyebrow">THE LIVING BOOK</p>
+      <h1>Ideas worth following.</h1>
+      <p class="hero-copy">A growing collection of independent webpages exploring intelligence, evolution, technology, humanity and the questions that sit between them.</p>
+      <button class="primary" id="openContents">Open Topics</button>
+    </section>
+  </main>
+
+  <div class="contents-overlay" id="contentsOverlay" aria-hidden="true">
+    <div class="contents-panel" role="dialog" aria-modal="true" aria-labelledby="contentsTitle">
+      <div class="contents-head">
+        <div>
+          <p class="eyebrow">THE BOOK</p>
+          <h2 id="contentsTitle">Topics</h2>
+        </div>
+        <button class="close-btn" id="closeContents" aria-label="Close topics">×</button>
+      </div>
+      <div class="contents-layout">
+        <aside class="versions">
+          <p class="label">VERSIONS</p>
+          <div id="versionList"></div>
+        </aside>
+        <section class="entries">
+          <p class="label">WEBPAGES</p>
+          <div id="pageList"></div>
+        </section>
+        <section class="preview">
+          <p class="label">SELECTED WEBPAGE</p>
+          <h3 id="previewTitle">—</h3>
+          <p id="previewText">Select a webpage to see its topics.</p>
+          <div class="preview-topics" id="previewTopics"></div>
+          <button class="primary small" id="previewOpen">Open webpage</button>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="site-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
