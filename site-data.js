@@ -1,6 +1,6 @@
 // Add future webpages here. The Topics interface is generated from this file.
 window.LIVING_BOOK = {
-  versions: [
+  Topics: [
     {
   id: 'style-sheets',
   label: 'STYLE SHEETS',
