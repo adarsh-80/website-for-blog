@@ -85,10 +85,12 @@ if (article) {
     const start = stops[index]?.h?.offsetTop || 0;
     const end = stops[next]?.h?.offsetTop || start + 1;
     const t = next === index ? 0 : Math.max(0, Math.min(1, (y - start) / Math.max(1, end - start)));
+    // Keep the background transition smooth, but never interpolate text color.
     document.body.style.setProperty('--bg-rgb', mix(a.rgb, b.rgb, t).join(','));
-    document.body.style.setProperty('--ink-rgb', mix(a.ink, b.ink, t).join(','));
     document.body.style.setProperty('--accent-rgb', mix(a.accent, b.accent, t).join(','));
-    document.body.dataset.theme = stops[index]?.key || 'mind';
+    const textTheme = t < 0.5 ? a : b;
+    document.body.style.setProperty('--ink-rgb', textTheme.ink.join(','));
+    document.body.dataset.theme = textTheme === a ? (stops[index]?.key || 'mind') : (stops[next]?.key || stops[index]?.key || 'mind');
   }
 
   function updateReadingState() {
