@@ -1,6 +1,30 @@
 // Add future webpages here. The Topics interface is generated from this file.
 window.LIVING_BOOK = {
   versions: [
+    {
+  id: 'style-sheets',
+  label: 'STYLE SHEETS',
+  pages: [
+    {
+      id: 'style-sheets',
+      title: 'Style Sheets',
+      path: 'pages/style-sheets/index.html',
+      description: 'A visual study of interfaces, geometry, motion and information.',
+      topics: [
+        { id: 'style-systems', title: 'Style Systems' },
+        { id: 'typography', title: 'Typography' },
+        { id: 'color', title: 'Color' },
+        { id: 'layout', title: 'Layout' },
+        { id: 'components', title: 'Components' },
+        { id: 'motion', title: 'Motion' },
+        { id: 'design-principles', title: 'Design Principles' },
+        { id: 'featured', title: 'From Ideas to Interfaces' },
+        { id: 'resources', title: 'Quick Resources' },
+        { id: 'references', title: 'Tools & References' }
+      ]
+    }
+  ]
+},
 {
   id: 'v1-6',
   label: 'V1.6',
