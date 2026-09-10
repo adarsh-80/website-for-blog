@@ -2,6 +2,39 @@
 window.LIVING_BOOK = {
   versions: [
     {
+  id: 'instinct',
+  label: 'INSTINCT',
+  pages: [
+    {
+      id: 'instinct',
+      title: 'Instinct',
+      path: 'pages/instinct/index.html',
+      description: 'A scientific study of instinct, innate behaviour, evolution, neural circuits, development and human behaviour.',
+      topics: [
+        { id: 'definition', title: 'Definition' },
+        { id: 'history', title: 'History' },
+        { id: 'evolution', title: 'Evolutionary origins' },
+        { id: 'genetics', title: 'Genetics & development' },
+        { id: 'neurobiology', title: 'Neural circuitry' },
+        { id: 'hormones', title: 'Hormones & neurochemistry' },
+        { id: 'comparative', title: 'Across species' },
+        { id: 'human', title: 'Human instincts' },
+        { id: 'development', title: 'Development & plasticity' },
+        { id: 'decision', title: 'Instinct vs decision' },
+        { id: 'override', title: 'Modulation & override' },
+        { id: 'culture', title: 'Culture' },
+        { id: 'clinical', title: 'Clinical relevance' },
+        { id: 'comparative-methods', title: 'Experimental methods' },
+        { id: 'ai', title: 'Computational & AI models' },
+        { id: 'philosophy', title: 'Philosophical distinctions' },
+        { id: 'open', title: 'Open questions' },
+        { id: 'conclusion', title: 'Conclusion' },
+        { id: 'references', title: 'References' }
+      ]
+    }
+  ]
+},
+    {
   id: 'style-sheets',
   label: 'STYLE SHEETS',
   pages: [
